@@ -8,6 +8,25 @@
     <link rel="shortcut icon" href="./img/favicon-16x16.png">
     <meta name="description" content="Description goes here">
     <title>Cloud Media Service - Home</title>
+
+    <!-- noscript starts  -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap">
+    </noscript>
+    <noscript>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    </noscript>
+    <noscript>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </noscript>
+    <noscript>
+        <link rel="stylesheet" href="./css/style.css">
+    </noscript>
+    <!-- noscript ends  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" media="print" onload="this.media='all';">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" media="print" onload="this.media='all';">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="print" onload="this.media='all';">
+    <link rel="stylesheet" href="./css/style.css" media="print" onload="this.media='all';">
     <!-- preloader starts  -->
     <style id="preloader-css">
         body.loading {
@@ -18,7 +37,7 @@
             top: 0;
             right: 0;
             bottom: 0;
-            background-color: rgb(116, 116, 116);
+            margin: 0;
             overflow: hidden;
             transition: all .5s ease-in-out;
         }
@@ -27,9 +46,11 @@
             position: relative;
             width: inherit;
             height: inherit;
+            background-color: #ffffff;
+            z-index: 9999;
         }
         
-        .container {
+        .preloader-container {
             width: 200px;
             height: 200px;
             position: absolute;
@@ -161,31 +182,12 @@
         });
     </script>
     <!-- preloader ends  -->
-    <!-- noscript starts  -->
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap">
-    </noscript>
-    <noscript>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
-    </noscript>
-    <noscript>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    </noscript>
-    <noscript>
-        <link rel="stylesheet" href="./css/style.css">
-    </noscript>
-    <!-- noscript ends  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" media="print" onload="this.media='all';">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" media="print" onload="this.media='all';">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="print" onload="this.media='all';">
-    <link rel="stylesheet" href="./css/style.css" media="print" onload="this.media='all';">
-
 </head>
 
 <body class="loading">
     <!-- preloader starts  -->
     <div class="preloader">
-        <div class="container">
+        <div class="preloader-container">
             <div class="dot dot-1"></div>
             <div class="dot dot-2"></div>
             <div class="dot dot-3"></div>
